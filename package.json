@@ -4,7 +4,11 @@
   "description": "todo app using react hooks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-production": "webpack --mode production",
+    "build": "webpack -d --watch",
+    "server": "nodemon server/index.js rs",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
