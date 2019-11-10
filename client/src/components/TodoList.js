@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-unused-expressions */
 import React from "react";
@@ -9,10 +10,9 @@ import {
   Checkbox,
   IconButton
 } from "@material-ui/core";
-
 import DeleteIcon from "@material-ui/icons/Delete";
 
-const TodoList = ({ todos, deleteTodo }) => {
+const TodoList = ({ todos, deleteTodo }) => (
   <List>
     {todos.map((todo, index) => (
       <ListItem key={index.toString()} dense button>
@@ -30,7 +30,7 @@ const TodoList = ({ todos, deleteTodo }) => {
         </ListItemSecondaryAction>
       </ListItem>
     ))}
-  </List>;
-};
+  </List>
+);
 
 export default TodoList;
